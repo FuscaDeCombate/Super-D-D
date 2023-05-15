@@ -1,0 +1,64 @@
+*{
+    margin: 0 auto;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-position: none;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #02031f;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(27, 27, 27);
+}
+
+header img {
+    height: 10%;
+    width: 10%;
+    background-color: rgb(27, 27, 27);
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 245, 232);
+    background-color: rgb(27, 27, 27);
+    font-size: 3vw ;
+    margin-top: 1.5%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(27, 27, 27);
+    opacity: 70%;
+    margin-top: 0.5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+nav a {
+    color: rgb(255, 245, 232);
+    font-size: 1.4vw;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+        background-image: url(background-phone.png);
+    }
+    
+    nav {
+        opacity: 1;
+        width: 100%;
+    }
+}
