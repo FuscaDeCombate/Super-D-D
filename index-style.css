@@ -36,24 +36,54 @@ header a:hover{
     color: aliceblue;
 }
 
+#tudo {
+    background-color:rgba(16, 0, 28, 0.8);
+    margin-top: 5%;
+    width: 90%;
+    border: solid rgba(255, 247, 0, 0.7);
+    border-radius: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    padding-inline: 4%;
+    text-indent: 7%;
+    font-size: 1.5vw;
+    padding-top: 2%;
+    text-align: justify;
+}
+
+.title {
+    color: rgb(255, 0, 0);
+    font-family: fantasy;
+    font-size: 3.7vw;
+    text-align: center;
+}
+
+.sub {
+    color:rgb(255, 255, 255);
+    text-decoration: underline;
+    font-size: 1.6vw;
+    padding: 2.6%;
+    text-align: center;
+}
+
+#book {
+    display: flex;
+    margin-inline: -4%;
+    margin-top: 2%;
+}
+
 @media only screen and (max-width: 600px) {
     
     body {
         background-image: url(background-phone.png);
         background-color: black;
     }
-    header img{
-        width: 20%;
-        height: 20%;
-    }
-    header h1{
-        font-size: 6vw;
-    }
-    nav {
-        opacity: 1;
-        width: 100%;
-    }
-    nav a{
-        font-size: 3.6vw;
+
+    header a{
+        font-size: 2vw;
     }
 }
