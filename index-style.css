@@ -13,7 +13,7 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(37, 37, 37);
 }
 
 header img {
@@ -24,41 +24,36 @@ header img {
     margin-bottom: 0.5%;
 }
 
-header h1 {
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(255, 245, 232);
-    background-color: rgb(27, 27, 27);
-    font-size: 3vw ;
-    margin-top: 1.5%;
+header a {
+    color: rgb(196, 196, 196);
+    font-size: 1.3vw;
+    margin-top: 1.3%;
+    margin-bottom: 1.3%;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(27, 27, 27);
-    opacity: 70%;
-    margin-top: 0.5%;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-nav a {
-    color: rgb(255, 245, 232);
-    font-size: 1.4vw;
-}
-
-nav a:hover{
+header a:hover{
     text-decoration: underline;
+    color: aliceblue;
 }
 
 @media only screen and (max-width: 600px) {
     
     body {
         background-image: url(background-phone.png);
+        background-color: black;
     }
-    
+    header img{
+        width: 20%;
+        height: 20%;
+    }
+    header h1{
+        font-size: 6vw;
+    }
     nav {
         opacity: 1;
         width: 100%;
+    }
+    nav a{
+        font-size: 3.6vw;
     }
 }
