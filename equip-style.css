@@ -80,28 +80,29 @@ p {
     font-family: serif;
 }
 
-#books {
+.list {
     display: flex;
-    margin-top: 2%;
+    flex-direction: row;
+    margin: 2%;
 }
 
-#books img {
-    width: 27vw;
+li {
+    color: rgb(255, 255, 255);
+    padding-inline: 4%;
+    text-indent: 7%;
+    font-size: 1.9vw;
+    padding-top: 2%;
+    text-align: justify;
+    font-family: 'Alegreya', serif;
+    width: 110%;
 }
 
-.imgd {
-    flex: 1;
-    word-wrap: break-word;
-    margin-inline: 1%;
+.b1 {
+    background-color:#04063a;
 }
 
-#dr {
-    display: flex;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    height: 27vw;
-    border-radius: 20px;
-    border: solid #dc000067;
+.b2 {
+    background-color:#02031f;
 }
 
 @media only screen and (max-width: 600px) {
@@ -127,15 +128,11 @@ p {
         font-size: 3.1vw;
     }
 
-    #books {
+    .list {
         flex-direction: column;
     }
 
-    #books img {
-        width: 50vw;
-    }
-
-    .imgd {
-        text-align: center;
+    li {
+        font-size: 2.9vw;
     }
 }

@@ -54,11 +54,16 @@ header a:hover{
     padding-bottom: 2%;
 }
 
+.display {
+    display: flex;
+    align-items: center;
+}
+
 p {
     color: rgb(255, 255, 255);
     padding-inline: 4%;
     text-indent: 7%;
-    font-size: 2vw;
+    font-size: 1.6vw;
     padding-top: 2%;
     text-align: justify;
     font-family: 'Alegreya', serif;
@@ -74,34 +79,65 @@ p {
 .sub {
     color:rgb(255, 255, 255);
     text-decoration: underline;
-    font-size: 2vw;
+    font-size: 2.2vw;
     margin: 4%;
     text-align: center;
     font-family: serif;
 }
 
-#books {
+.raca {
+    margin: 2%;
     display: flex;
-    margin-top: 2%;
+    border-radius: 5%;
+    flex-direction: row;
 }
 
-#books img {
-    width: 27vw;
+figure {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 1%;
 }
 
-.imgd {
-    flex: 1;
-    word-wrap: break-word;
-    margin-inline: 1%;
+figure img {
+    width: 21vw;
+    text-align: center;
 }
 
-#dr {
+figure p {
+    text-align: center;
+    text-decoration: none;
+}
+
+.info {
+    animation-name: show;
+    animation-duration: 2s;
     display: flex;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    height: 27vw;
-    border-radius: 20px;
-    border: solid #dc000067;
+    flex-direction: column;
+}
+
+.desc {
+    border-bottom: solid rgba(255, 247, 0, 0.7) 1px;
+    margin-bottom: 2%;
+}
+
+.hab {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.hab div {
+    width: 50%;
+}
+
+li {
+    color: rgb(255, 255, 255);
+    padding-inline: 4%;
+    text-indent: 7%;
+    font-size: 1.4vw;
+    padding-top: 2%;
+    text-align: justify;
+    font-family: 'Alegreya', serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -127,15 +163,20 @@ p {
         font-size: 3.1vw;
     }
 
-    #books {
+    .raca {
+        display: flex;
         flex-direction: column;
     }
 
-    #books img {
-        width: 50vw;
+    figure {
+        border-right: solid rgba(255, 247, 0, 0) 1px;
     }
 
-    .imgd {
-        text-align: center;
+    figure img {
+        width: 34vw;
+    }
+
+    li {
+        font-size: 2.9vw;
     }
 }

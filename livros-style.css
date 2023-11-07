@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url(background.jpg);
+    background-image: url(/TCM/background.jpg);
     background-position: none;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -58,9 +58,8 @@ p {
     color: rgb(255, 255, 255);
     padding-inline: 4%;
     text-indent: 7%;
-    font-size: 2vw;
+    font-size: 1.6vw;
     padding-top: 2%;
-    text-align: justify;
     font-family: 'Alegreya', serif;
 }
 
@@ -68,40 +67,47 @@ p {
     color: rgb(255, 0, 0);
     font-family: 'Cinzel Decorative', cursive;
     font-size: 3.8vw;
+    margin-inline: 8%;
     text-align: center;
 }
 
 .sub {
     color:rgb(255, 255, 255);
     text-decoration: underline;
-    font-size: 2vw;
+    font-size: 2.2vw;
     margin: 4%;
     text-align: center;
     font-family: serif;
 }
 
-#books {
+.livros {
     display: flex;
-    margin-top: 2%;
+    margin: 2%;
 }
 
-#books img {
-    width: 27vw;
-}
-
-.imgd {
+.p1, .p2 {
+    display: flex;
     flex: 1;
-    word-wrap: break-word;
-    margin-inline: 1%;
 }
 
-#dr {
-    display: flex;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    height: 27vw;
-    border-radius: 20px;
-    border: solid #dc000067;
+figure {
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #02031faf;
+    border-radius: 5%;
+    margin-inline: 1%;
+    border: solid #ff03039a 1px;
+    padding: 2%;
+}
+
+figure img {
+    width: 21vw;
+    text-align: center;
+    transition: 10s ease;
+}
+
+figure:hover {
+    background-color: #030530af;
 }
 
 @media only screen and (max-width: 600px) {
@@ -127,15 +133,11 @@ p {
         font-size: 3.1vw;
     }
 
-    #books {
+    .livros {
         flex-direction: column;
     }
 
-    #books img {
-        width: 50vw;
-    }
-
-    .imgd {
-        text-align: center;
+    figure img {
+        width: 34vw;
     }
 }
