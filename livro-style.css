@@ -57,56 +57,46 @@ p {
     color: rgb(255, 255, 255);
     padding-inline: 4%;
     text-indent: 7%;
-    font-size: 1.6vw;
+    font-size: 2vw;
     padding-top: 2%;
+    text-align: justify;
     font-family: 'Alegreya', serif;
+    text-indent: 30px;
 }
 
 .title {
     color: rgb(255, 0, 0);
     font-family: 'Cinzel Decorative', cursive;
     font-size: 3.8vw;
-    margin-inline: 8%;
     text-align: center;
 }
 
 .sub {
     color:rgb(255, 255, 255);
     text-decoration: underline;
-    font-size: 2.2vw;
+    font-size: 2vw;
     margin: 4%;
     text-align: center;
     font-family: serif;
 }
 
-.livros {
+#tudo div {
     display: flex;
-    margin: 2%;
-}
-
-.p1, .p2 {
-    display: flex;
-    flex: 1;
-}
-
-figure {
-    box-sizing: border-box;
-    text-align: center;
-    background-color: #02031faf;
-    border-radius: 5%;
-    margin-inline: 1%;
-    border: solid #ff03039a 1px;
+    margin-top: 3%;
+    flex-direction: row;
+    border: solid rgb(162, 179, 16) 1px;
+    border-radius: 20px;
+    margin-inline: 3%;
     padding: 2%;
+    animation-name: show1;
+    animation-duration: 2s;
+    height: 40vw;
 }
 
-figure img {
-    width: 21vw;
-    text-align: center;
-    transition: 10s ease;
-}
-
-figure:hover {
-    background-color: #030530af;
+#tudo div p {
+    animation-name: show2;
+    animation-duration: 3s;
+    position:sticky;
 }
 
 @media only screen and (max-width: 600px) {
@@ -114,6 +104,10 @@ figure:hover {
     body {
         background-image: url(background-phone.png);
         background-color: black;
+    }
+
+    header {
+        flex-direction: column;
     }
 
     header a{
@@ -132,11 +126,34 @@ figure:hover {
         font-size: 3.1vw;
     }
 
-    .livros {
+    #tudo div {
         flex-direction: column;
+        height: auto;
     }
 
     figure img {
-        width: 34vw;
+        width: 50vw;
+        height: 52vw;
+    }
+}
+
+@keyframes show1 {
+    0% {
+        width: 40%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes show2 {
+    0%{
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

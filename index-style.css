@@ -4,7 +4,6 @@
 
 body {
     background-image: url(background.jpg);
-    background-position: none;
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: #02031f;
@@ -109,6 +108,10 @@ p {
     body {
         background-image: url(background-phone.png);
         background-color: black;
+    }
+
+    header {
+        flex-direction: column;
     }
 
     header a{

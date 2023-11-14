@@ -33,7 +33,7 @@ header a:hover{
 
 #head {
     margin-top: 1.3%;
-    margin-bottom: 1.3%;
+    margin-bottom: 1%;
     display: flex;
 }
 
@@ -49,8 +49,12 @@ header a:hover{
 #tudo {
     background-color:rgba(16, 0, 28, 0.8);
     border-radius: 20px;
-    padding-top: 4%;
-    padding-bottom: 2%;
+    padding-inline: 3%;
+}
+
+.display {
+    display: flex;
+    width: 100%;
 }
 
 p {
@@ -59,6 +63,7 @@ p {
     text-indent: 7%;
     font-size: 1.6vw;
     padding-top: 2%;
+    text-align: justify;
     font-family: 'Alegreya', serif;
 }
 
@@ -66,8 +71,9 @@ p {
     color: rgb(255, 0, 0);
     font-family: 'Cinzel Decorative', cursive;
     font-size: 3.8vw;
-    margin-inline: 8%;
     text-align: center;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 
 .sub {
@@ -79,34 +85,64 @@ p {
     font-family: serif;
 }
 
-.livros {
+.clas {
     display: flex;
-    margin: 2%;
-}
-
-.p1, .p2 {
-    display: flex;
-    flex: 1;
+    border-radius: 5%;
+    flex-direction: row;
+    border: solid rgba(255, 247, 0, 0.7) 1px;
+    margin-bottom: 3%;
+    animation-name: show1;
+    animation-duration: 2s;
+    height: 45vw;
 }
 
 figure {
-    box-sizing: border-box;
+    padding: 5px;
     text-align: center;
-    background-color: #02031faf;
-    border-radius: 5%;
-    margin-inline: 1%;
-    border: solid #ff03039a 1px;
-    padding: 2%;
 }
 
 figure img {
-    width: 21vw;
-    text-align: center;
-    transition: 10s ease;
+    width: 22vw;
+    height: 29vw;
+    border-radius: 5%;
 }
 
-figure:hover {
-    background-color: #030530af;
+figure p {
+    text-align: center;
+    margin: 1%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    animation-name: show2;
+    animation-duration: 3s;
+}
+
+.desc {
+    border-bottom: solid rgba(255, 247, 0, 0.7) 1px;
+    margin-bottom: 2%;
+}
+
+.hab {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.hab ul {
+    width: 50%;
+}
+
+li {
+    color: rgb(255, 255, 255);
+    padding-inline: 4%;
+    text-indent: 7%;
+    font-size: 1.4vw;
+    padding-top: 2%;
+    text-align: justify;
+    font-family: 'Alegreya', serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -114,6 +150,10 @@ figure:hover {
     body {
         background-image: url(background-phone.png);
         background-color: black;
+    }
+
+    header {
+        flex-direction: column;
     }
 
     header a{
@@ -132,11 +172,39 @@ figure:hover {
         font-size: 3.1vw;
     }
 
-    .livros {
+    .clas {
+        display: flex;
         flex-direction: column;
+        height: auto;
     }
 
-    figure img {
-        width: 34vw;
+    .figure img {
+        width: 50vw;
+        height: 52vw;
+    }
+
+    li {
+        font-size: 2.9vw;
+    }
+}
+
+@keyframes show1 {
+    0% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes show2 {
+    0%{
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
